@@ -16,6 +16,10 @@ def test_append_and_reverse_list_basic() -> None:
     assert train.to_reverse_list() == ["C3", "B2", "A1"]
 
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 0b419c9470ca7d4bddc2c90931a7154e9bddd1e3
 def test_detach_last_car_basic() -> None:
     train = MidnightMailDLL()
     train.append_car("A1")
@@ -24,11 +28,16 @@ def test_detach_last_car_basic() -> None:
     assert train.to_reverse_list() == ["A1"]
 
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 0b419c9470ca7d4bddc2c90931a7154e9bddd1e3
 def test_detach_last_car_empty() -> None:
     train = MidnightMailDLL()
     assert train.detach_last_car() is None
 
 
+<<<<<<< HEAD
 def test_append_single_car_reverse_list() -> None:
     """Single node: reverse list should contain just that car."""
     train = MidnightMailDLL()
@@ -66,11 +75,20 @@ def test_reverse_list_empty_dll() -> None:
 
 # Problem 2: ticket code
 # Valid case, 2 invalid cases, 1 edge case
+=======
+# Problem 2: ticket code
+# Add at least 4 tests total:
+# - 1 valid case
+# - 2 invalid cases
+# - 1 edge case
+
+>>>>>>> 0b419c9470ca7d4bddc2c90931a7154e9bddd1e3
 
 def test_ticket_code_valid_example() -> None:
     assert is_valid_ticket_code("MM-1234") is True
 
 
+<<<<<<< HEAD
 def test_ticket_code_invalid_wrong_prefix() -> None:
     """Wrong prefix should fail even if the suffix is valid."""
     assert is_valid_ticket_code("XX-1234") is False
@@ -99,6 +117,9 @@ def test_ticket_code_edge_empty_string() -> None:
 def test_ticket_code_edge_prefix_only() -> None:
     """Just 'MM-' with no suffix should fail."""
     assert is_valid_ticket_code("MM-") is False
+=======
+# TODO: add more tests for Problem 2
+>>>>>>> 0b419c9470ca7d4bddc2c90931a7154e9bddd1e3
 
 
 # Problem 3: recursion on a list
@@ -108,10 +129,15 @@ def test_count_priority_labels_basic() -> None:
     assert count_priority_labels(labels, "PRIORITY") == 2
 
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 0b419c9470ca7d4bddc2c90931a7154e9bddd1e3
 def test_count_priority_labels_empty() -> None:
     assert count_priority_labels([], "PRIORITY") == 0
 
 
+<<<<<<< HEAD
 def test_count_priority_labels_no_match() -> None:
     """Target not present at all should return 0."""
     labels = ["NORMAL", "LATE", "NORMAL"]
@@ -130,12 +156,15 @@ def test_count_priority_labels_single_match() -> None:
     assert count_priority_labels(labels, "PRIORITY") == 1
 
 
+=======
+>>>>>>> 0b419c9470ca7d4bddc2c90931a7154e9bddd1e3
 # Problem 4: recursion on a string
 
 def test_clean_radio_message_basic() -> None:
     assert clean_radio_message("go now") == "gonow"
 
 
+<<<<<<< HEAD
 def test_clean_radio_message_empty() -> None:
     assert clean_radio_message("") == ""
 
@@ -163,3 +192,8 @@ def test_clean_radio_message_single_char_space() -> None:
 def test_clean_radio_message_single_char_non_space() -> None:
     """A single non-space character should be returned as-is."""
     assert clean_radio_message("X") == "X"
+=======
+
+def test_clean_radio_message_empty() -> None:
+    assert clean_radio_message("") == ""
+>>>>>>> 0b419c9470ca7d4bddc2c90931a7154e9bddd1e3

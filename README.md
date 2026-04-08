@@ -2,6 +2,7 @@
 # Week 5 — Midnight Mail Train
 
 ## Summary
+<<<<<<< HEAD
 
 This assignment combines doubly linked list operations with string/list validation and recursive thinking. I implemented a `MidnightMailDLL` class that supports appending cars, detaching the last car, and traversing in reverse. I then wrote `is_valid_ticket_code` to validate a specific string format, and two recursive functions — `count_priority_labels` to count matching items in a list, and `clean_radio_message` to strip spaces from a string. The hardest part was the recursive functions, because each one needed a clear base case and a single-step reduction before the recursive call.
 
@@ -53,3 +54,29 @@ This assignment combines doubly linked list operations with string/list validati
 - **AI used?** Yes
 - **What it helped with:** Generating the initial implementations, writing the additional test cases, and explaining the O(n²) cost of recursive string concatenation in Python.
 - **Other sources used:** Week 5 lecture slides on recursion and DLL pointer wiring.
+=======
+Write 3–6 lines explaining what this assignment does.
+
+## Approach
+- Problem 1:
+- Problem 2:
+- Problem 3:
+- Problem 4:
+
+## Complexity
+Write the time and space complexity for each required problem.
+Give a short reason for each one.
+
+## Edge-case checklist
+- [ ] empty train
+- [ ] one train car
+- [ ] invalid ticket code
+- [ ] empty label list
+- [ ] empty message
+- [ ] one-character or all-space message
+
+## Assistance & Sources
+- AI used? Y/N
+- What it helped with:
+- Other sources used:
+>>>>>>> 0b419c9470ca7d4bddc2c90931a7154e9bddd1e3
